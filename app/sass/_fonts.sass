@@ -1,9 +1,19 @@
-@import "_base/font-face"
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
 
-+font-face("Gilroy", "../fonts/gilroy-black/gilroy-black", 900)
-+font-face("Gilroy", "../fonts/gilroy-extrabold/gilroy-extrabold", 800)
-+font-face("Gilroy", "../fonts/gilroy-bold/gilroy-bold", 700)
-+font-face("Gilroy", "../fonts/gilroy-semibold/gilroy-semibold", 600)
-+font-face("Gilroy", "../fonts/gilroy-medium/gilroy-medium", 500)
-+font-face("Gilroy", "../fonts/gilroy-regular/gilroy-regular", 400)
-+font-face("Gilroy", "../fonts/gilroy-light/gilroy-light", 300)
+
+@include font('Gilroy', normal, 900, '../fonts/gilroy-black/gilroy-black.woff2')
+@include font('Gilroy', normal, 800, '../fonts/gilroy-extrabold/gilroy-extrabold.woff2')
+@include font('Gilroy', normal, 700, '../fonts/gilroy-bold/gilroy-bold.woff2')
+@include font('Gilroy', normal, 600, '../fonts/gilroy-semibold/gilroy-semibold.woff2')
+@include font('Gilroy', normal, 500, '../fonts/gilroy-medium/gilroy-medium.woff2')
+@include font('Gilroy', normal, 400, '../fonts/gilroy-regular/gilroy-regular.woff2')
+@include font('Gilroy', normal, 300, '../fonts/gilroy-light/gilroy-light.woff2')
+
+@include font('UltimaProBlack', normal, 300, '../fonts/UltimaProBlack.woff2')
+
+@include font('Spectral', normal, 300, '../fonts/Spectral-Regular.woff2')

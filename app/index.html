@@ -11,87 +11,160 @@
 	<meta name="theme-color" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css?v=1">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
-
 </head>
 
 <body>
 
-	<header class="header" id="header">
+	<div class="soc">
+		<a href="#" target="_blank">Instagram</a>
+		<a href="#" target="_blank">Facebook</a>
+	</div>
+
+	<header class="header">
 		<div class="header__container container">
 
+			<button class="hamburger" type="button">
+				<span class="hamburger__box">
+					<span class="hamburger__item"></span>
+				</span>
+			</button>	
+
+			<ul class="header__nav nav">
+				<li><a href="#">Про нас</a></li>
+				<li>
+					<a href="#">Каталог</a>
+					<ul>
+						<li><a href="#">Одяг та дрібнички для обох <span></span></a></li>
+						<li><a href="#">Аксесуари для нього і для неї <span></span></a></li>
+						<li><a href="#">Еко сумки <span></span></a></li>
+						<li><a href="#">Круті поробки <span></span></a></li>
+						<li><a href="#">Потрібні штуки для дому та офісу <span></span></a></li>
+					</ul>
+				</li>
+				<li><a href="#">Новини</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
 
 			<a href="#" class="header__logo">
-				<img src="img/logo.png" alt="">
+				<img src="img/header__logo.png" alt="">
 			</a>
 
-			<p class="header__price">Москва, Пыжёвский пер., д. 5, стр 1.</p>
+			<div class="header__info">
 
-			<a href="mailto:info@ogmsk.ru" class="header__mail">info@ogmsk.ru</a>
+				<div class="header__info_wrap header__search">
+					<form action="">
+						<input type="text" placeholder="Пошук">
+					</form>
+					<img src="img/header__search.png" alt="">
+				</div>
 
-			
-			<div class="header__tel">
-				<a href="teL:+74951422525">+7 (495) 142-25-25</a>
-				<a href="teL:+79773377727">+7 (977) 337-77-27</a>
+				<a class="header__info_wrap header__cart">
+					<img src="img/header__cart.png" alt="">
+					<span>3</span>
+				</a>
+
+				<a class="header__info_wrap header__hard">
+					<img src="img/header__hard.png" alt="">
+					<span>3</span>
+				</a>
+
+				<div class="header__info_wrap header__login">
+					<img src="img/header__login.png" alt="">
+					<ul>
+						<li><a href="#">Профіль</a></li>
+						<li><a href="#">Выход</a></li>
+					</ul>
+				</div>
+
+				<div class="header__lang">
+					<a href="#">ukr</a>
+					<ul>
+						<li><a href="#">ru</a></li>
+						<li><a href="#">En</a></li>
+					</ul>
+				</div>
+				
 			</div>
 
-			
 		</div>
 	</header>
 
 	<main class="main">
 
-		<section class="hero" id="hero">
+		<section class="hero">
 			<div class="hero__container container">
 
-				<h1>Простое <br>решение <br>сложных <br>вопросов</h1>
+				<h1>Творча майстерня</h1>
+				<p class="hero__sub-title">все зроблено дітьми  - сиротами</p>
 
-				<ul>
-					<li>
-						<a href="#step">
-							Оспаривание кадастровой стоимости 
-							<br> коммерческой недвижимости 
-							<span></span>
-						</a>
-					</li>
-					<li>
-						<a href="#step--two">
-							Выкуп помещений в рамках 159-ФЗ
-							<br> (преимущественное право выкупа)
-							<span></span>
-						</a>
-					</li>
-					<li>
-						<a href="#step--four">
-							Споры с Департаментом городского имущества
-							<br> города Москвы на стороне арендаторов и
-							<br> собственников коммерческой недвижимости
-						<span></span>
-						</a>
-					</li>
-					<li>
-						<a href="#step--four">
-							Оспаривание компенсационной стоимости за
-							<br> недвижимое имущество при изъятии для
-							<br> муниципальных или государственных нужд
-							<span></span>
-						</a>
-					</li>
-				</ul>
-				
+				<div class="hero__info">
+					<p><b><i>Привіт! </i></b></p>
+					<p>
+						Якщо ти тут, отже ти небайдужий до хендмейд речей та дітей-сиріт. 
+						<br> <b>Ти не пожалкуєш, що зайшов сюди,</b> адже ми створили перший в Україні соціальний воркшоп, який містить різні товари та одяг, зроблені руками дітей-сиріт. 
+					</p>
+				</div>
 
+				<div class="hero__bg">
+					<img src="img/hero__bg.png" alt="">
+				</div>
 			</div>
 		</section>
+
+		<section class="project">
+			<div class="project__container container">
+
+				<div class="project__col">
+					<h2>Навіщо та про що цей проект?</h2>
+					<p>
+						Даний проект – це колаборація дітей-сиріт з українськими дизайнерами та майстрами України. 
+					</p>
+					<p>
+						У рамках майстер класів, вони навчають їх різним поробкам, які ти зможеш знайти на цій платформі.
+					</p>
+					<div class="project__question">?</div>
+				</div>
+				
+				<div class="project__col">
+					<h2>В чому фішка?</h2>
+					<p>
+						Усі речі є унікальними. Ти 100 % захочеш їх носити, тому що вони круті, стильні та незвичайні, адже їх розробляли відомі дизайнери та майстри. 
+					</p>
+					<p>
+						Ці речі стануть як незамінним атрибутом твого повсякденного життя, так і чудовим подарунком на свята, корпоративи та дні народження.
+					</p>
+					<p>
+						Асортимент товарів буде постійно обновлюватись, адже нові малюнки  та поробки від сиріт надходять до нас фактично кожного дня.  Тому, будь-ласка, слідкуй за нашими обновленнями у соц. мережах та цьому сайті <i><b>аби встигнути першим придбати  круту незамінну річ! </b></i>
+					</p>
+				</div>
+				
+			</div>
+		</section>
+
+		<sectio class="shop">
+			<div class="shop__container container">
+
+				<div class="shop__catalog">
+					<h2>Новинки</h2>
+					<ul>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+
+				<div class="shop__list"></div>
+
+			</div>
+		</sectio>
 
 	</main>
 
 	<footer class="footer">
-		<div class=" container">
+		<div class="container">
 			<div class="footer__container">
 			
-				<p>© 2019 Основа Групп</p>
+				<p>© 2019 Hand Crafts by Orphans</p>
 
-				<a href="http://flex-design.net/" target="_blank">Политика конфиденциальности</a>
+				<a href="http://flex-design.net/" target="_blank">Політика конфіденційності</a>
 
 				<a href="http://flex-design.net/" target="_blank">Created by flexdesign</a>
 				
@@ -99,36 +172,7 @@
 		</div>
 	</footer>
 
-	<div class="modal" id="modal--step--four">
-
-		<button class="modal__close modal--step--four_close" type="button">
-			<span></span>
-			<span></span>
-		</button>
-
-		<form action="sendmail.php" class="form" method="post"
-			onsubmit="yaCounter63840805.reachGoal('ORDER'); return true;"
-			>
-
-			<h3>Заказать услугу</h3>
-			<p>Споры с департаментом городского имущества города Москвы на стороне арендаторов и собственников коммерческой недвижимости</p>
-			<input type="hidden" name="subject" value="Изъятие имущества для муниципальных или государственных нужд">
-			<div class="form__line">
-				<input type="text" name="name" placeholder="Имя" required>
-			</div>
-			<div class="form__line">
-				<input type="tel" name="phone" placeholder="Телефон" required>
-			</div>
-			<div class="form__line">
-				<input type="email" name="mail" placeholder="Email *" required>
-			</div>
-			<div class="form__line">
-				<button type="submit" class="btn btn--modal" name="submit">Отправить</button>
-			</div>
-		</form>
-	</div>
-	
-	<div class="modal" id="order">
+<!-- 	<div class="modal" id="order">
 
 		<button class="modal__close order_close" type="button">
 			<span></span>
@@ -163,7 +207,7 @@
 		</button>
 		<h3>Спасибо за доверие!</h3>
 		<p>Мы обязательно с вами свяжемся!</p>
-	</div>
+	</div> -->
 
 	<script src="js/scripts.min.js"></script>
 
