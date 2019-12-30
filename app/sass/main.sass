@@ -39,6 +39,10 @@
 	top: 50%
 	transform: translate(-40%, -50%) rotate(-90deg)
 	z-index: 1000
+	padding: 15px
+	background-color: #fff
+	border-bottom-right-radius: 20px
+	border-bottom-left-radius: 20px
 
 	a
 		@extend .link
@@ -409,6 +413,10 @@
 		left: 35%
 		top: 50%
 		transform: translate(0, -54%)
+		height: 150%
+
+		img
+			height: 100%
 
 
 .project
@@ -467,13 +475,142 @@
 		justify-content: space-between
 		flex-wrap: wrap
 
-	&__catagory
-		width: 25%
+	&__category
+		width: 15%
+
+		h2
+			font-family: $sub-title
+			margin-bottom: 80px
+
+		li
+			margin-bottom: 55px
+
+		a
+			display: flex
+			position: relative
+			max-width: 160px
+			transition: all .6s
+
+			&::before
+				content: '+'
+				display: block
+				position: absolute
+				left: -30px
+				font-weight: 300
+				font-size: 36px
+				line-height: 1
+				transform: scale(0)
+				transition: all .6s
+				color: #89c8b1
+
+			&:hover,
+			&:focus
+				color: #89c8b1
+				margin-left: 30px
+
+				&::before
+					transform: scale(1)
 
 	&__list
 		width: 73%
+		display: flex
+		justify-content: flex-start
+		flex-wrap: wrap
+
+	&__cart
+		width: 33.333%
+		margin-bottom: 60px
+		padding: 0 15px
+
+		&:hover,
+		&:focus
+			.shop__cart_img
+				img
+					margin-top: -30px
+					margin-bottom: 30px
+
+		&_img
+			display: block
+			width: 100%
+			margin-bottom: 15px
+			transition: all .6s
+			cursor: url('../img/cursor.png'), pointer
+			
+			img
+				width: 100%
+				border-radius: 15px
+				transition: all .6s
+
+		&_price
+			font-size: 24px
+			font-weight: 800
+			margin-bottom: 12px
+			padding: 0 15px
+
+		&_wrap
+			display: flex
+			align-items: flex-start
+			padding: 0 15px
+
+			p
+				width: 80%
+
+			a
+				position: relative
+				display: block
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				margin-left: 15px
+				box-shadow: 0 0 3px 0 rgba(#000, .2)
+
+				&:hover,
+				&:focus
+					box-shadow: 0 0 4px 0 rgba(#000, .4)
 
 
+				img
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+
+		&_btn
+
+
+.info
+	padding: 
+		top: 80px
+		bottom: 55px
+
+	h2
+		margin-bottom: 35px
+		font-family: $sub-title
+
+	p
+		text-indent: 15px
+		max-width: 600px
+		line-height: 1.6
+
+	a
+		@extend .link
+		color: #89b6af
+		display: inline
+
+		&::before
+			background-color: #89b6af
+
+
+	&__wrap
+		background-color: $bg
+		border-radius: 20px
+		padding: 80px 90px
+
+	&__bg
+		position: absolute
+		left: 60%
+		top: 50%
+		transform: translate(0, -45%)
 
 
 

@@ -2,6 +2,32 @@
 	.container
 		max-width: 1200px
 
+	.soc
+		padding: 5px
+		font-size: 14px
+		transform: translate(-44%,-50%) rotate(-90deg)
+
+	.hero
+		padding: 130px 0
+
+		&__bg
+			transform: translate(0, -50%)
+
+		&__sub-title
+			margin-bottom: 40px
+
+	.project
+		padding: 100px 0
+
+		&__col
+			padding: 30px !important
+
+	.shop__list
+		width: 75%
+
+	.info__wrap
+		padding: 60px
+	
 
 @media only screen and (max-width : 1200px)
 	body
@@ -11,13 +37,15 @@
 		font-size: 36px
 
 	h2
-		font-size: 30px
+		font-size: 30px !important
 
 	h3
 		font-size: 20px
 
+
 	.container
 		max-width: 992px
+
 
 	.about
 
@@ -32,6 +60,39 @@
 
 		&__container
 			padding: 25px 10px
+
+	.hero
+		padding: 100px 0
+
+		&__bg
+			left: 45%
+
+	.project
+		padding: 60px 0
+
+		p
+			font-size: 16px
+			line-height: 1.7
+
+	.shop
+		&__list
+			width: 83%
+
+		&__cart
+			margin-bottom: 35px
+
+			&_wrap a
+				margin-left: 10px
+
+	.info
+		padding: 40px 0
+
+		&__wrap
+			padding: 30px
+
+		&__bg
+			height: 120%
+			left: 70%
 
 
 @media only screen and (max-width : 992px)
@@ -77,6 +138,49 @@
 			&:hover
 				form
 					right: 27px
+
+	.hero
+		h1,
+		p
+			max-width: 400px
+
+	.project h2
+		margin-bottom: 15px
+
+	.shop
+		&__cart
+			width: 50%
+
+			&_img
+				margin-bottom: 10px
+
+			&_price
+				font-size: 20px
+				padding: 0
+				margin-bottom: 10px
+
+			&_wrap
+				padding: 0
+				align-items: center
+
+		&__category
+			width: 22%
+
+			a
+				max-width: 100%
+
+				&::before
+					font-size: 24px
+					line-height: .8
+
+			li
+				margin-bottom: 10px
+
+		&__list
+			width: 75%
+
+	.info p
+		max-width: 500px
 
 
 @media only screen and (max-width : 767px)
@@ -174,7 +278,55 @@
 		&__container
 			justify-content: space-around
 			text-align: center
+	
+	.hero
+		padding: 50px 0
 
+		h1, p
+			max-width: 345px
+
+		&__sub-title
+			margin-bottom: 15px
+
+		&__info
+			p
+				margin-bottom: 15px
+
+	.project
+		padding: 40px 0
+
+		p
+			font-size: 14px
+
+		&__col
+			width: 100% !important
+
+		&__question
+			top: auto
+			right: auto
+			left: 50%
+			top: 100%
+			transform: translate(-50%, -50%)
+			width: 60px
+			height: 60px
+			line-height: 60px
+			font-size: 36px
+
+
+	.shop
+		&__cart
+			padding: 0 10px
+
+			&_wrap a
+				margin-left: 5px
+
+	.info
+		h2
+			margin-bottom: 15px
+
+		&__bg
+			display: none
+		
 
 @media only screen and (max-width : 576px)
 	.container
@@ -194,8 +346,39 @@
 		&::placeholder
 			line-height: 45px
 
+	.hero
+		padding: 30px 0
+
+		&__bg
+			display: none
+
+		h1, p
+			max-width: 100%
+
+
+	.project
+		padding: 30px 0
+
+	.shop
+
+		h2
+			margin-bottom: 10px
+
+		&__category,
+		&__list
+			width: 100%
+
+		&__category
+
+	.soc
+		padding: 1px
+		transform: translate(-46%,-50%) rotate(-90deg)
+
 
 @media only screen and (max-width : 480px)
+	h1
+		font-size: 28px
+
 	.modal
 		padding: 20px
 
@@ -239,4 +422,20 @@
 
 		&__col
 			padding: 15px
+
+	.hero__sub-title
+		font-size: 18px
+
+	
+	.shop__cart
+		width: 100%
+		max-width: 320px
+		margin: 0 auto
+	
+	.info
+		padding: 30px 0
+
+		&__wrap
+			padding: 15px
+
 
