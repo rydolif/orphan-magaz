@@ -67,8 +67,7 @@ ul
 	list-style-type: none
 
 input, textarea
-	border: none
-	border-bottom: 1px solid #c3c3c3
+	border: 1px solid #fff
 	outline: none
 	box-shadow: none
 	-webkit-appearance: none
@@ -76,8 +75,9 @@ input, textarea
 	padding: 0 20px
 	color: $text
 	width: 100%
-	font-size: 20px
 	transition: all .6s
+	border-radius: 20px
+	background-color: #fff
 	
 	&:focus:required:invalid
 		border-color: $accent
@@ -92,14 +92,20 @@ input, textarea
 		-webkit-appearance: none
 
 	&::placeholder
-		color: #a6a6a6
-		font-size: 20px
-		line-height: 40px
+		color: #cccccc
+
+input
+	height: 50px
+	line-height: 50px
+
+	&::placeholder
+		line-height: 50px
 
 textarea
 	resize: none
 	padding-top: 10px
 	line-height: 1.4
+	height: 190px
 
 	&::placeholder
 		line-height: 1.4

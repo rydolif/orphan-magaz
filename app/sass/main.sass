@@ -413,7 +413,6 @@
 		left: 35%
 		top: 50%
 		transform: translate(0, -54%)
-		height: 150%
 
 		img
 			height: 100%
@@ -611,6 +610,67 @@
 		left: 60%
 		top: 50%
 		transform: translate(0, -45%)
+
+.contacts
+	padding: 30px 0
+
+	&__container
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+	&__info
+		max-width: 330px
+		width: 100%
+		padding-top: 25px
+
+		h3
+			text-transform: uppercase
+			margin-bottom: 90px
+
+		a
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+			margin-bottom: 25px
+
+			&:hover,
+			&:focus
+				color: $green
+
+			&:last-child
+				margin-bottom: 0
+
+		img
+			display: block
+			margin: 0 auto 25px
+
+	&__form
+		max-width: 820px
+		width: 100%
+		padding: 25px 45px 70px 45px
+		background-color: $bg
+		border-radius: 20px
+
+		h3
+			text-transform: uppercase
+			margin-bottom: 35px
+
+		&_line
+			margin-bottom: 30px
+			position: relative
+
+			&:last-child
+				margin-bottom: 0
+
+
+		&_btn
+			position: absolute
+			bottom: 20px
+			right: 20px
+
 
 
 
